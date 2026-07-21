@@ -4,3 +4,6 @@ datasets
 .env
 __pycache__/
 *.pyc
+sql_data/EER_Diagram.mwb
+Brazil Ecommerce.session.sql
+.vscode/
