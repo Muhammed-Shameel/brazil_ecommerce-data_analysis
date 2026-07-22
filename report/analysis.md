@@ -58,3 +58,14 @@ Number of seller from cities
 
 - Which are the top 10 customers with most payment
 ![alt text](image-7.png)
+
+_ How many have top 10 customers bought
+![alt text](image-8.png)
+
+_ Which Seller has the most amount of revenue 
+![alt text](image-9.png)
+
+- Which are the top selling categories?
+![alt text](image-10.png)
+in english
+![alt text](image-11.png)
