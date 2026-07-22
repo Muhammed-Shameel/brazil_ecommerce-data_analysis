@@ -1,71 +1,180 @@
-## Diagram Relation
+# Olist Brazil E-commerce Dataset Analysis
 
-- Customer & Order : 1 to many relation (1 customer can have many orders)
-    -  customers 1 ───────< orders
-- Orders & Order Item : 1 to many relation (1 customer can have many orders)
-    - orders 1 ───────< order item
-- Seller & Order Item: 1 to many relation (1 customer can have many orders)
-    - sellers 1 ───────< order item
-- Products & Order Item : 1 to many relation (1 customer can have many orders)
-    - products 1 ───────< order item
-- Order & Order Payment : 1 to many reation ( 1 order can have one or multiple payment records.)
-    - orders 1 ───────< order_payments
-- Order & Order Review : 1 to many reation ( 1 order can have many reviews)
-    - orders 1 ───────< order_reviews
+## Database Relationships
 
-## Customers db analysis
+### 1. Customers ↔ Orders
+**Relationship:** One-to-Many (1:N)
 
-- The state with most amount of customers;
-    - SP, RJ, MG, RS, PR, SC, BA, DF
+One customer can place multiple orders.
 
-![alt text](image.png)
+```
+customers 1 ─────────< orders
+```
 
-- The City with most amount of customers;
-    - sao paulo, rio de janeiro, belo horizonte, brasilia, curtitiba
+---
 
-![alt text](image-1.png)
+### 2. Orders ↔ Order Items
+**Relationship:** One-to-Many (1:N)
 
-## Products Table
+One order can contain multiple items.
 
-- Number of Unique product are 74.
+```
+orders 1 ─────────< order_items
+```
 
-## Orders Table
+---
 
-- No.of Orders are 99,441
+### 3. Sellers ↔ Order Items
+**Relationship:** One-to-Many (1:N)
 
+One seller can sell many order items.
 
-- Unique Values of **order status**
-    
-![alt text](image-2.png)
+```
+sellers 1 ─────────< order_items
+```
+
+---
+
+### 4. Products ↔ Order Items
+**Relationship:** One-to-Many (1:N)
+
+One product can appear in multiple order items.
+
+```
+products 1 ─────────< order_items
+```
+
+---
+
+### 5. Orders ↔ Order Payments
+**Relationship:** One-to-Many (1:N)
+
+One order can have one or more payment records.
+
+```
+orders 1 ─────────< order_payments
+```
+
+---
+
+### 6. Orders ↔ Order Reviews
+**Relationship:** One-to-Many (1:N)
+
+Each order can have a review record.
+
+```
+orders 1 ─────────< order_reviews
+```
+
+---
+
+# Individual Table Analysis
+
+## Customers
+
+### Customer Distribution by State
+
+States with the highest number of customers:
+
+- SP
+- RJ
+- MG
+- RS
+- PR
+- SC
+- BA
+- DF
+
+![Customer Distribution by State](image.png)
+
+---
+
+### Customer Distribution by City
+
+Cities with the highest number of customers:
+
+- São Paulo
+- Rio de Janeiro
+- Belo Horizonte
+- Brasília
+- Curitiba
+
+![Customer Distribution by City](image-1.png)
+
+---
+
+## Products
+
+- Total unique product categories: **74**
+
+---
+
+## Orders
+
+- Total number of orders: **99,441**
+
+### Order Status Distribution
+
+![Order Status Distribution](image-2.png)
+
+---
 
 ## Geolocation
 
-Number of Postal Record of City
-![alt text](image-3.png)
+### Number of Postal Code Records by City
 
-Number of Postal Record of State
-![alt text](image-4.png)
+![Postal Code Records by City](image-3.png)
+
+---
+
+### Number of Postal Code Records by State
+
+![Postal Code Records by State](image-4.png)
+
+---
 
 ## Sellers
 
-Number of seller from cities 
-![alt text](image-5.png)
+### Seller Distribution by City
 
-# Multi Table Analysis
+![Seller Distribution by City](image-5.png)
 
-- Which are the top 10 customers with most orders
-![alt text](image-6.png)
+---
 
-- Which are the top 10 customers with most payment
-![alt text](image-7.png)
+# Multi-Table Analysis
 
-_ How many have top 10 customers bought
-![alt text](image-8.png)
+## Top 10 Customers by Number of Orders
 
-_ Which Seller has the most amount of revenue 
-![alt text](image-9.png)
+![Top Customers by Orders](image-6.png)
 
-- Which are the top selling categories?
-![alt text](image-10.png)
-in english
-![alt text](image-11.png)
+---
+
+## Top 10 Customers by Total Payment
+
+![Top Customers by Payment](image-7.png)
+
+---
+
+## Top 10 Customers by Number of Items Purchased
+
+![Top Customers by Items Purchased](image-8.png)
+
+---
+
+## Top 10 Sellers by Revenue
+
+Revenue is calculated using the total value of products sold.
+
+![Top Sellers by Revenue](image-9.png)
+
+---
+
+## Top 10 Best-Selling Product Categories
+
+### Portuguese Category Names
+
+![Portuguese Categories](image-10.png)
+
+### English Category Names
+
+![English Categories](image-11.png)
