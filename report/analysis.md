@@ -50,3 +50,11 @@ Number of Postal Record of State
 
 Number of seller from cities 
 ![alt text](image-5.png)
+
+# Multi Table Analysis
+
+- Which are the top 10 customers with most orders
+![alt text](image-6.png)
+
+- Which are the top 10 customers with most payment
+![alt text](image-7.png)
