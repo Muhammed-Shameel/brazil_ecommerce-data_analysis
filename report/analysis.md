@@ -36,7 +36,7 @@
 
 - Unique Values of **order status**
     
-    ![alt text](image-2.png)
+![alt text](image-2.png)
 
 ## Geolocation
 
@@ -45,3 +45,8 @@ Number of Postal Record of City
 
 Number of Postal Record of State
 ![alt text](image-4.png)
+
+## Sellers
+
+Number of seller from cities 
+![alt text](image-5.png)
