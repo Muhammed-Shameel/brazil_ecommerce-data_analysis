@@ -146,6 +146,7 @@ Cities with the highest number of customers:
 ## Top 10 Customers by Number of Orders
 
 ![Top Customers by Orders](image-6.png)
+![](top10_customer_by_order.png)
 
 ---
 
@@ -178,3 +179,14 @@ Revenue is calculated using the total value of products sold.
 ### English Category Names
 
 ![English Categories](image-11.png)
+
+## Top 10 Selling Products based on Revenue
+
+![Top 10 Selling Product based on Revenue](image-12.png)
+
+![Revenue - Category](revenue_by_category.png)
+
+## Total product revenue month
+![Total-Revenue and Product category](image-14.png)
+
+![Monthly Revenue](monthly_revenue.png)
